@@ -2,45 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>陈一鸣</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+        }
+        body{
+            background-color: #fff2e3;
+            font-size: 14px;
+            color: #87968e;
+            background: #fff2e3;
+            text-align: center;
+        }
+        .title{
+            font-size: 42px;
+            margin: 30px 0;
+        }
+        .desc{
+            margin-top: 10px;
+            margin-bottom: 14px;
+            opacity: 0.6;
+        }
+        .nav{
+            margin: 40px 0;
+        }
+        .nav>li,.footer>li{
+            display: inline-block;
+            margin: 3px;
+            background: #72b890;
+            border-radius: 3px;
+        }
+        .btn{
+            color: #fff;
+            padding: 6px 14px;
+            display: block;
+        }
+        .nav>li.active{
+            opacity: 0.8;
+        }
+        .nav>li:hover,.footer>li:hover{
+            opacity: 0.6;
+        }
+        .footer{
+            margin-top: 30px;
+        }
+        .me{
+            margin-top: 30px;
+        }
+        .me>a{
+            color: #72b890;
+        }
+    </style>
 </head>
 <body>
-    <form action="xxx.php" method="post">
-        <label>
-            用户名
-            <input type="text" name="mignzi" placeholder="用户名">
-        </label>
-        <label>
-            密码
-            <input type="password" name="mima" placeholder="密码">
-        </label>
-        <label>
-            性别
-            <input type="radio" value="man" name="xingbie">男
-            <input type="radio" value="woman" name="xingbie">女
-        </label>
-        <label>
-            取向
-            <input type="radio" value="man" name="quxiang">男
-            <input type="radio" value="woman" name="quxiang">女
-        </label>
-        <label>
-            爱好
-            <input type="checkbox" value="man" name="aihao">吃
-            <input type="checkbox" value="woman" name="aihao">喝
-        </label>
-        <label>
-            评论
-            <textarea></textarea>
-        </label>
-        <label>
-            car
-            <select name="car">
-                <option value="baoma">宝马</option>
-                <option value="benchi">奔驰</option>
-            </select>
-        </label>
-        <button type="submit">提交</button>
-    </form>
+    <h1 class="title">我的作业</h1>
+    <p class="desc">这是我的作业</p>
+    <ul class="nav">
+        <li><a href="#" class="btn">作业1</a></li>
+        <li class="active"><a href="#" class="btn">作业2</a></li>
+        <li><a href="#" class="btn">作业3</a></li>
+        <li><a href="#" class="btn">作业4</a></li>
+        <li><a href="#" class="btn">作业5</a></li>
+    </ul>
+    <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/65d4aba2-a097-4b24-aaa0-ebbaf7eedab2" class="work_img">
+    <ul class="footer">
+        <li><a href="#" class="btn">查看源码</a></li>
+        <li><a href="#" class="btn">使用说明</a></li>
+    </ul>
+    <p class="me">作者：<a href="#">陈一鸣</a></p>
+</div>
 </body>
 </html>
