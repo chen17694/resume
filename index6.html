@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .pull-left{
+            float: left;
+        }
+        .pull-right{
+            float: right;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .demo1,.demo2{
+            margin-bottom: 50px;
+        }
+        .demo1 .left{
+            width: 200px;
+            background: red;
+            height: 300px;
+        }
+        .demo1 .right{
+            margin-left: 210px;
+            background: blue;
+            height: 400px;
+        }
+        .demo2 .left,.demo2 .right{
+            width: 200px;
+            background: red;
+            height: 300px;
+        }
+        .demo2 .center{
+            margin: 0 200px;
+            height: 400px;
+            background: blue;
+        }
+        .demo3{
+            width: 300px;
+            height: 200px;
+            background: red;
+            margin: 0 auto 50px auto;
+        }
+        .demo4{
+            width: 300px;
+            height: 200px;
+            background: grey;
+            margin: 0 auto 50px auto;
+            text-align: center;
+            display: table;
+        }
+        .demo4>div{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .demo5{
+            margin: 50px auto 50px auto;
+            width: 500px;
+            height: 500px;
+            background: grey;
+            text-align: center;
+            font-size: 0;
+            border: 3px solid red;
+        }
+        .demo5::before{
+            content: '';
+            height: 500px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .demo5 img{
+            width: 250px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo1 clearfix">
+        <div class="left pull-left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="demo2 clearfix">
+        <div class="left pull-left"></div>
+        <div class="right pull-right"></div>
+        <div class="center"></div>
+    </div>
+<   <div class="demo3"></div>
+    <div class="demo4">
+        <div>
+            <h2>这是标题</h2>
+            <p>这是一段内容这是一段内容</p>
+        </div>
+    </div>
+    <div class="demo4">
+        <div>
+            <button type="button">按钮1</button>
+            <button type="button">按钮2</button>
+            <button type="button">按钮3</button>
+        </div>
+    </div>
+    <div class="demo5">
+        <img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=4261459652,2683727926&fm=173&app=25&f=JPEG?w=639&h=426&s=1E100FC1E8C1DE4736BDBD10030080D1">
+    </div>
+</body>
+</html>
