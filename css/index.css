@@ -1,0 +1,317 @@
+header{
+    background: url("../images/header-bg.jpg") no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+header nav{
+    padding: 35px;
+}
+header .logo{
+    font-size: 2em;
+    color: #000;
+    color: #fed136;
+}
+header nav > ul li a{
+    padding: 15px;
+    color: #fff;
+    line-height: 40px;
+}
+header nav > ul li a:hover{
+    color: #fed136;
+}
+.header-intro{
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    width: 90%;
+}
+.header-intro h1{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+.header-intro h2{
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+}
+
+
+main section.services .icon{
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background: #fed136;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+}
+main section.services .iconfont{
+    font-size: 46px;
+}
+
+main section.services .col-md-4 h4{
+    margin: 20px 0;
+    font-weight: bold;
+}
+main section.services .col-md-4 p{
+    color: #777;
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+main section.portfolio{
+    background-color: #f7f7f7;
+}
+main section.portfolio .figcaption{
+    max-width: 400px;
+    background-color: #fff;
+    text-align: center;
+    padding: 25px;
+}
+main section.portfolio .figcaption h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+main section.portfolio .figcaption p{
+    font-size: 16px;
+    color: #777;
+}
+main section.portfolio .figure{
+    margin-bottom: 30px;
+}
+main section.portfolio .figure>a{
+    position: relative;
+    display: block;
+}
+main section.portfolio .figure .portfolio-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #f4d133;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    opacity: 0;
+}
+main section.portfolio .figure .portfolio-hover:hover{
+    opacity: 0.8;
+}
+main section.portfolio .figure .portfolio-hover .icon-plus{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 50px;
+}
+
+main section.about ul li{
+    margin-bottom: 100px;
+    position: relative;
+}
+main section.about ul li::before{
+    content: '';
+    width: 2px;
+    height: 280px;
+    background: #f1f1f1;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: -1;
+}
+
+main section.about ul li:last-of-type::before{
+    height: 0;
+}
+main section.about ul li img{
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    border: 7px solid #f1f1f1;
+}
+main section.about ul li dl{
+    margin: 0;
+}
+main section.about ul li dl dt{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+main section.about ul li dl dd:nth-of-type(1){
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+main section.about ul li dl dd:nth-of-type(2){
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #777;
+    line-height: 1.75;
+    font-size: 14px;
+    font-weight: normal;
+}
+main section.about ul li:nth-child(odd){
+    padding-right: calc(50% - 85px);
+}
+main section.about ul li:nth-child(even){
+    padding-left: calc(50% - 85px);
+}
+main section.about ul li:nth-child(odd) dl{
+    text-align:right;
+    margin-right: 200px;
+}
+main section.about ul li:nth-child(even) dl{
+    text-align: left;
+    margin-left: 200px;
+}
+main section.about ul li:nth-child(odd) img{
+    float: right;
+}
+main section.about ul li:nth-child(even) img{
+    float: left;
+}
+main section.about ul li:last-of-type{
+    margin-bottom: 0;
+    padding: 0;
+    display: block;
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fed136;
+    color: #fff;
+    border-radius: 50%;
+    border: 7px solid #f1f1f1;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 40px 30px;
+}
+
+main section.team{
+    background-color: #f7f7f7;
+}
+main section.team ul li {
+    text-align: center;
+}
+main section.team ul li img{
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+main section.team ul li h5{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+main section.team ul li p{
+    color: #777;
+    margin-bottom: 10px;
+}
+main section.team ul li .icon{
+    display: inline-block;
+    background: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 5px;
+}
+main section.team ul li .icon .iconfont{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+}
+.team-introduction{
+    font-size: 16px;
+    color: #777;
+    width: 70%;
+    margin: 50px auto 0 auto;
+    line-height: 1.5;
+}
+
+.clients{
+    padding: 50px 0;
+}
+.clients a img{
+    margin: 0 auto;
+}
+
+main section.contact{
+    background-image: url("../images/map-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #222;
+    height: 100%;
+}
+main section.contact .section-intro h2{
+    color: #fff;
+}
+main section.contact .section-intro p{
+    color: #777;
+}
+main section.contact .form-group{
+    margin-bottom: 25px;
+}
+main section.contact input{
+    height: 62px;
+}
+main section.contact input,main section.contact textarea{
+    padding: 20px;
+}
+main section.contact textarea{
+    height: 236px;
+}
+main section.contact .form-control::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+    font-weight: bold;
+    font-size: 16px;
+}
+main section.contact .form-control.form-control:-ms-input-placeholder {
+    color: #999;
+    opacity: 1;
+    font-weight: bold;
+    font-size: 16px;
+}
+main section.contact .form-control.form-control::-webkit-input-placeholder {
+    color: #999;
+    opacity: 1;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+footer{
+    padding: 25px 0;
+}
+footer>div>div{
+    line-height: 40px;
+}
+footer>div>div a,footer>div>div a:hover{
+    color: #fec503;
+}
+footer .icon{
+    display: inline-block;
+    background: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 5px;
+}
+footer .iconfont{
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+}
