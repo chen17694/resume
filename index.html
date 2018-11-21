@@ -60,6 +60,31 @@
             color: #72b890;
         }
     </style>
+    <script>
+        var json = {
+            name: "陈一鸣",
+            friend:[1,2,3,4,5],
+            json2:{
+                aaa: "123123",
+                bbb:[6,7,8,9,10]
+            }
+        }
+        function deepClone(data) {
+            var obj = data.constructor === Array ? [] : {};
+            for (d in data) {
+                if(data.hasOwnProperty(d)){
+                    if(typeof data[d] === "object"){
+                        obj[d] = deepClone(data[d])
+                    }else {
+                        obj[d] = data[d]
+                    }
+                }
+            }
+            return obj
+        }
+        var o = deepClone(json)
+        console.log(o)
+    </script>
 </head>
 <body>
     <h1 class="title">我的作业</h1>
