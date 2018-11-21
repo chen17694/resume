@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul class="ct">
+        <li data-img="1.jpg">鼠标放置查看图片1</li>
+        <li data-img="2.jpg">鼠标放置查看图片2</li>
+        <li data-img="3.jpg">鼠标放置查看图片3</li>
+    </ul>
+    <div class="img-preview"></div>
+    <script>
+        var a = document.querySelector('.ct');
+        var b = a.children;
+        var c = document.querySelector('.img-preview')
+        var d = document.createElement('img');
+        c.appendChild(d)
+        var img;
+        for(var i=0; i<b.length; i++){
+            b[i].onmouseover = function () {
+                img = this.getAttribute('data-img')
+
+                d.setAttribute('src',img)
+            }
+        }
+    </script>
+</body>
+</html>
